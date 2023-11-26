@@ -7,11 +7,7 @@
 // a au moins 2 points positifs et une hauteur maximale de 20 centimètres.
 
 // 3 Faites une boucle à travers les métaux. Augmentez le prix de tous les métaux de 10 %.
-var irons = db.irons.find()
-irons.forEach(iron => {
-    var newPrice = iron.price * 1.1;
-    db.irons.updateOne({ _id: iron._id }, { $set: { price: newPrice } })
-})
+
 
 // 4 Pendant les soldes, chaque marque accorde une remise spécifique.
 // Les remises sont données sous forme d'objet littéral

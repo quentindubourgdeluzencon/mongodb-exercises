@@ -25,7 +25,8 @@ Pour vous connecter à la base MongoDB, vous devez **installer mongosh (localeme
 
 ### Exercices
 
-Une fois connecté, complétez les fichiers correspondants aux exercices en **explorant les bases de données via le shell**. Vous pouvez inscrire vos réponses directement dans les scripts js ; les questions sont en commentaires.
+Une fois connecté, complétez les fichiers correspondants aux exercices en **explorant les bases de données via le shell**. 
+Vous pouvez inscrire vos réponses directement dans les scripts js. Les questions sont en commentaires.
 
 1. **Exercice 0 - Familiarisez-vous avec la base de données**
 2. **Exercice 1 - find, insert, update, remove**

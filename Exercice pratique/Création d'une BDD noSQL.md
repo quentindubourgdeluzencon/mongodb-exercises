@@ -50,35 +50,40 @@ Ci-dessous, vous pouvez consulter la base de données d'un service de livraison 
 #### Requêtes de recherche
 
 - Écrivez une requête pour récupérer tous les utilisateurs de la collection "utilisateurs".
-
-`Votre réponse..`
+`db.utilisateurs.find()`
 
 - Écrivez une requête pour récupérer toutes les commandes datées du 16 janvier 2023. À grande echelle, cette requête est-elle efficace ? Pourquoi ?
 
-`Votre réponse..`
+`db.produits.find({Date_de_Commande:{$gte: new Date("2023-01-16")}})`
+`A grande echelle non parce que pour une collection avec un gand nombre d'element  il effectuera juste une recherche complete des elements dans la collection. Sans index cles cela reviendra a augmenter le temps d'operations et cela n'est point optimal.`
 
 #### Mise à jour de données
 
 - Modifiez le document d'un utilisateur pour mettre à jour son adresse e-mail (choisissez une nouvelle adresse mail).
 - Modifiez le document du restaurand Sushi Express pour ajouter un champ "fermeture" avec la date du "01/12/2023". Une opération pareille aurait-elle été possible en SQL ?
 
-`Votre réponse..`
+`Une telle opération n'aurait pas été possible en SQL. Il aurait fallu faire un ALTER TABLE puis un ADD COLUMN la colonne avant de modifier une instance`
 
 - Supprimez le restaurant Sushi-express. Remarquez-vous une incohérence dans l'ensemble de base de donnée ?
 
-`Votre réponse..`
+`Aucune incohérence non..`
 
 #### Agrégation de données
 Ressource utile : https://www.mongodb.com/docs/manual/core/map-reduce/ https://www.youtube.com/watch?v=cHGaQz0E7AU https://www.youtube.com/watch?v=fEACZP_878Y
 - Utilisez l'agrégation pour trouver la moyenne des prix des produits.
  
-`Votre réponse..`
+`db.produits.aggregate({
+    $group: {
+        _id: null
+        moy_prix: {$avg: $prix} 
+    }
+})`
 
 - Utilisez l'agrégation pour regrouper les utilisateurs par adresse et compter combien d'utilisateurs ont la même adresse.
  
-`Votre réponse..`
+`db.utilisateurs.aggregate([{$group: {_id: "$Adresse", count: {$sum: 1}}}]);`
 
 - En considérant le fait que MongoDB dispatch ses données sur plusieurs serveurs, en quoi cette méthode "d'agrégation" permet à MongoDB de travailler efficacement ?
 
-`Votre réponse..`
+`Cela permet d'optimiser le traitement des données à grande échelle en minimisant le transfert de données, en utilisant des index et en offrant une flexibilité dans les opérations de traitement de données.`
 

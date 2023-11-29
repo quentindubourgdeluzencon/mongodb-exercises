@@ -69,7 +69,7 @@ Ci-dessous, vous pouvez consulter la base de données d'un service de livraison 
 `Votre réponse..`
 
 #### Agrégation de données
-
+Ressource utile : https://www.mongodb.com/docs/manual/core/map-reduce/
 - Utilisez l'agrégation pour trouver la moyenne des prix des produits.
  
 `Votre réponse..`

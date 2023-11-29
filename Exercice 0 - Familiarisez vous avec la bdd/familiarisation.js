@@ -2,6 +2,7 @@
 
 // 2 Allez dans la BDD "exercices". Quelle commande permet de se déplacer à une nouvelle base de données. Que se passe-t-il si cette base n'existe pas ?
 
+
 // 3 Quelles sont les différentes collections présentes dans cette BDD ? Quelle commande permet de les afficher.
 
 

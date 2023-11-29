@@ -42,7 +42,7 @@ Ci-dessous, vous pouvez consulter la base de données d'un service de livraison 
 
 #### Insertion de données
 
-- Dans la collection "utilisateurs", insérez au moins deux documents représentant des utilisateurs fictifs.
+- Dans la collection "utilisateurs", insérez au moins trois documents représentant des utilisateurs fictifs.
 - Dans la collection "restaurants", insérez au moins deux documents représentant des restaurants fictifs avec leurs détails.
 - Dans la collection "produits", insérez au moins deux documents représentant des produits fictifs avec leurs détails.
 - Dans la collection "commandes", insérez au moins deux documents représentant des produits fictifs avec leurs détails.
@@ -50,6 +50,7 @@ Ci-dessous, vous pouvez consulter la base de données d'un service de livraison 
 #### Requêtes de recherche
 
 - Écrivez une requête pour récupérer tous les utilisateurs de la collection "utilisateurs".
+`Votre réponse..`
 - Écrivez une requête pour récupérer toutes les commandes datées du 16 janvier 2023. À grande echelle, cette requête est-elle efficace ? Pourquoi ?
 
 #### Mise à jour de données

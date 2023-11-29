@@ -50,17 +50,35 @@ Ci-dessous, vous pouvez consulter la base de données d'un service de livraison 
 #### Requêtes de recherche
 
 - Écrivez une requête pour récupérer tous les utilisateurs de la collection "utilisateurs".
+
 `Votre réponse..`
+
 - Écrivez une requête pour récupérer toutes les commandes datées du 16 janvier 2023. À grande echelle, cette requête est-elle efficace ? Pourquoi ?
+
+`Votre réponse..`
 
 #### Mise à jour de données
 
 - Modifiez le document d'un utilisateur pour mettre à jour son adresse e-mail (choisissez une nouvelle adresse mail).
 - Modifiez le document du restaurand Sushi Express pour ajouter un champ "fermeture" avec la date du "01/12/2023". Une opération pareille aurait-elle été possible en SQL ?
+
+`Votre réponse..`
+
 - Supprimez le restaurant Sushi-express. Remarquez-vous une incohérence dans l'ensemble de base de donnée ?
+
+`Votre réponse..`
 
 #### Agrégation de données
 
 - Utilisez l'agrégation pour trouver la moyenne des prix des produits.
+ 
+`Votre réponse..`
+
 - Utilisez l'agrégation pour regrouper les utilisateurs par adresse et compter combien d'utilisateurs ont la même adresse.
+ 
+`Votre réponse..`
+
 - En considérant le fait que MongoDB dispatch ses données sur plusieurs serveurs, en quoi cette méthode "d'agrégation" permet à MongoDB de travailler efficacement ?
+
+`Votre réponse..`
+
